@@ -1,8 +1,0 @@
-[
-	{
-		localFolder: "G:/server_minigames_funmaps/csgo/maps",
-		mappedFolder: "maps",
-		includeSubdirectories: false,
-		includeExtensions: ["bsp", "nav"]
-	}
-]
