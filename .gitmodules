@@ -1,0 +1,3 @@
+[submodule "spanel/php/me/fru1t/common"]
+	path = spanel/php/me/fru1t/common
+	url = git@github.com:fru1tstand/fru1tme-common-php.git
