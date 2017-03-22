@@ -1,12 +1,26 @@
 <?php
 namespace me\fru1t\spanel\content;
-use me\fru1t\spanel\template\EmptyPage;
+use me\fru1t\spanel\template\EmptyDashboard;
 
 $body = <<<HTML
-Hi
+<section>
+  <div class="page-title">This is a title</div>
+  <div class="section-title">This is a section title</div>
+  <p>This is regular text</p>
+  <a href="#">Link for the Lazy</a>
+  
+</section>
+<section>
+  <div class="page-title">This is a title</div>
+  <div class="section-title">This is a section title</div>
+  <p>This is regular text</p>
+  <a href="#">Link for the Lazy</a>
+  
+</section>
+
 HTML;
 
-EmptyPage::start()
-    ->with(EmptyPage::FIELD_HTML_TITLE, "Fru1t.Me CSGO Server Panel - Home")
-    ->with(EmptyPage::FIELD_BODY, $body)
+EmptyDashboard::start()
+    ->with(EmptyDashboard::FIELD_TITLE, "Fru1t.Me CSGO Server Panel - Home")
+    ->with(EmptyDashboard::FIELD_CONTENT, $body)
     ->render();

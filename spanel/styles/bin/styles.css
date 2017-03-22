@@ -1,4 +1,87 @@
+.v-aligner, .dash-header select {
+  display: inline-block;
+  vertical-align: middle; }
+
+.v-aligner {
+  height: 100%; }
+
 * {
   box-sizing: border-box; }
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+ol, ul, li,
+table, thead, tbody, tfoot, th, tr, td,
+p {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f9f9f9; }
+
+a, a:link, a:visited {
+  color: #448AFF;
+  text-decoration: none; }
+a:hover, a:active {
+  color: #0053dd; }
+
+section {
+  margin-bottom: 36px; }
+
+.page-title {
+  font-size: 32px; }
+
+.section-title {
+  font-size: 26px; }
+
+.dash-header {
+  height: 42px;
+  margin-bottom: -42px;
+  background-color: #212121;
+  color: #f9f9f9; }
+  .dash-header select {
+    background: none;
+    font-family: Roboto, sans-serif;
+    border: none;
+    color: #f9f9f9;
+    outline: none;
+    margin-left: 12px;
+    padding-right: 36px;
+    font-size: 16px; }
+
+.dash-body {
+  height: 100%;
+  padding-top: 42px;
+  display: flex; }
+
+.dash-sidebar {
+  flex: 0 0 350px;
+  height: 100%;
+  overflow: auto;
+  width: 350px;
+  background-color: #212121;
+  color: #f9f9f9;
+  font-size: 16px; }
+  .dash-sidebar .dash-sidebar-links {
+    margin-bottom: 12px; }
+  .dash-sidebar .divider {
+    background-color: #448AFF;
+    color: #f9f9f9;
+    padding: 8px 12px; }
+  .dash-sidebar a, .dash-sidebar a:link, .dash-sidebar a:visited {
+    display: block;
+    padding: 8px 12px;
+    color: #FF9800; }
+  .dash-sidebar a:hover, .dash-sidebar a:active {
+    color: #212121;
+    background-color: #FF9800; }
+
+.dash-content {
+  flex: 1 1 auto;
+  overflow: auto; }
 
 /*# sourceMappingURL=styles.css.map */

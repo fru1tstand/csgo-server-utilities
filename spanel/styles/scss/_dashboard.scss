@@ -1,0 +1,62 @@
+// Styles pertaining to the dashboard
+.dash-header {
+  height: $dash-header-height;
+  margin-bottom: -$dash-header-height;
+  background-color: $dash-background-color;
+  color: $dash-header-color;
+
+  select {
+    @extend %v-aligned;
+
+    background: none;
+    font-family: $font-family;
+    border: none;
+    color: $dash-header-color;
+    outline: none;
+    margin-left: $dash-spacing;
+    padding-right: 36px;
+    font-size: 16px;
+  }
+}
+
+.dash-body {
+  height: 100%;
+  padding-top: $dash-header-height;
+  display: flex;
+}
+
+.dash-sidebar {
+  flex: 0 0 $dash-sidebar-width;
+  height: 100%;
+  overflow: auto;
+  width: $dash-sidebar-width;
+  background-color: $dash-background-color;
+  color: $dash-header-color;
+  font-size: 16px;
+
+  .dash-sidebar-links {
+    margin-bottom: $dash-spacing;
+  }
+
+  .divider {
+    background-color: $dash-sidebar-divider-background-color;
+    color: $dash-sidebar-divider-color;
+    padding: 8px $dash-spacing;
+  }
+  a {
+    &, &:link, &:visited {
+      display: block;
+      padding: 8px $dash-spacing;
+      color: $dash-sidebar-link-passive-color;
+    }
+    &:hover, &:active {
+      color: $dash-sidebar-link-active-color;
+      background-color: $dash-sidebar-link-active-background-color;
+    }
+  }
+}
+
+.dash-content {
+  flex: 1 1 auto;
+  overflow: auto;
+}

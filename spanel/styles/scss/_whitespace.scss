@@ -1,0 +1,9 @@
+// Controls nuances of CSS like vertical aligning, spacing, etc
+%v-aligned {
+  display: inline-block;
+  vertical-align: middle;
+}
+.v-aligner {
+  @extend %v-aligned;
+  height: 100%;
+}

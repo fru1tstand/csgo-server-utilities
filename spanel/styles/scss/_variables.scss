@@ -1,0 +1,32 @@
+// Variables
+$color-off-white: #f9f9f9;
+$color-primary:        #FF9800;
+$color-primary-dark:   #F57C00;
+$color-primary-light:  #FFE0B2;
+$color-primary-text:   #212121;
+$color-accent:         #448AFF;
+$color-secondary-text: #757575;
+$color-divider:        #BDBDBD;
+
+$font-family: Roboto, sans-serif;
+$background-color: $color-off-white;
+
+// Dashboard
+$dash-spacing: 12px;
+$dash-background-color: $color-primary-text;
+
+$dash-header-height: 42px;
+$dash-header-color: $color-off-white;
+
+$dash-sidebar-width: 350px;
+$dash-sidebar-divider-background-color: $color-accent;
+$dash-sidebar-divider-color: $color-off-white;
+$dash-sidebar-link-passive-color: $color-primary;
+$dash-sidebar-link-active-color: $color-primary-text;
+$dash-sidebar-link-active-background-color: $color-primary;
+$dash-sidebar-link-divider-color: $color-divider;
+
+// Template
+$section-spacing: 36px;
+$section-link-passive-color: $color-accent;
+$section-link-active-color: darken($section-link-passive-color, 20%);

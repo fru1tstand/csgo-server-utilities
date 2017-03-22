@@ -1,0 +1,35 @@
+// Styles effecting root tags
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+ol, ul, li,
+table, thead, tbody, tfoot, th, tr, td,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+}
+
+a {
+  &, &:link, &:visited {
+    color: $section-link-passive-color;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    color: $section-link-active-color;
+  }
+}
+section {
+  margin-bottom: $section-spacing;
+}
